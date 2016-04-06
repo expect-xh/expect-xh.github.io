@@ -724,6 +724,9 @@ form input.st-search-input_my {
 #header .header-nav .social a.mail:hover {
   border: 1px solid #006b98;
 }
+#header .header-nav .social a.csnd {
+  background: url("/img/csdn.png");
+}
 #header .switch-part {
   width: 100%;
   position: absolute;
