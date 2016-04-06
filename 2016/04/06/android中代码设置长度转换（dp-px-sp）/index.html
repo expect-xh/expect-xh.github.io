@@ -4,27 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>android中activity的启动模式 | expect的博客</title>
+  <title>android中代码设置长度转换（dp,px,sp） | expect的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="当应用运行起来后就会开启一条线程，线程中会有一个堆栈。每当有新的Activity创建的时候，就把它放入堆栈里面。而设置Activity的启动模式会让系统知道该怎么样利用堆栈创建，在AndroidManifest.xml文件中通过配置android:launchMode=””来设置
-
-
-Standard模式（默认）这个模式是系统默认的，不设置的模式属性用的就是这个模式。它就是直接创建一个新的Acti">
+  <meta name="description" content="在日常开发中，对有些控件需要在代码里改变尺寸，但是一般我们用的单位是dp。除了一些大公司会给出不同分辨率的图单位是px外，一般的还是用dp.在不同分辨率的屏幕，dp和px的转换比例不一样，特别是什么魅族呀（渣渣）。而我们在代码里面设置长度的单位是px，所以我们需要一些转换方法。
+12345678910111213141516171819$    public static int dip2px(C">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android中activity的启动模式">
-<meta property="og:url" content="http://yoursite.com/2016/04/06/android中activity的启动模式/index.html">
+<meta property="og:title" content="android中代码设置长度转换（dp,px,sp）">
+<meta property="og:url" content="http://yoursite.com/2016/04/06/android中代码设置长度转换（dp-px-sp）/index.html">
 <meta property="og:site_name" content="expect的博客">
-<meta property="og:description" content="当应用运行起来后就会开启一条线程，线程中会有一个堆栈。每当有新的Activity创建的时候，就把它放入堆栈里面。而设置Activity的启动模式会让系统知道该怎么样利用堆栈创建，在AndroidManifest.xml文件中通过配置android:launchMode=””来设置
-
-
-Standard模式（默认）这个模式是系统默认的，不设置的模式属性用的就是这个模式。它就是直接创建一个新的Acti">
-<meta property="og:updated_time" content="2016-04-06T01:14:27.828Z">
+<meta property="og:description" content="在日常开发中，对有些控件需要在代码里改变尺寸，但是一般我们用的单位是dp。除了一些大公司会给出不同分辨率的图单位是px外，一般的还是用dp.在不同分辨率的屏幕，dp和px的转换比例不一样，特别是什么魅族呀（渣渣）。而我们在代码里面设置长度的单位是px，所以我们需要一些转换方法。
+12345678910111213141516171819$    public static int dip2px(C">
+<meta property="og:updated_time" content="2016-04-06T03:34:25.282Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android中activity的启动模式">
-<meta name="twitter:description" content="当应用运行起来后就会开启一条线程，线程中会有一个堆栈。每当有新的Activity创建的时候，就把它放入堆栈里面。而设置Activity的启动模式会让系统知道该怎么样利用堆栈创建，在AndroidManifest.xml文件中通过配置android:launchMode=””来设置
-
-
-Standard模式（默认）这个模式是系统默认的，不设置的模式属性用的就是这个模式。它就是直接创建一个新的Acti">
+<meta name="twitter:title" content="android中代码设置长度转换（dp,px,sp）">
+<meta name="twitter:description" content="在日常开发中，对有些控件需要在代码里改变尺寸，但是一般我们用的单位是dp。除了一些大公司会给出不同分辨率的图单位是px外，一般的还是用dp.在不同分辨率的屏幕，dp和px的转换比例不一样，特别是什么魅族呀（渣渣）。而我们在代码里面设置长度的单位是px，所以我们需要一些转换方法。
+12345678910111213141516171819$    public static int dip2px(C">
   
     <link rel="alternative" href="/atom.xml" title="expect的博客" type="application/atom+xml">
   
@@ -205,11 +199,11 @@ Standard模式（默认）这个模式是系统默认的，不设置的模式属
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-android中activity的启动模式" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-android中代码设置长度转换（dp-px-sp）" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/06/android中activity的启动模式/" class="article-date">
-  	<time datetime="2016-04-06T01:13:28.000Z" itemprop="datePublished">2016-04-06</time>
+      <a href="/2016/04/06/android中代码设置长度转换（dp-px-sp）/" class="article-date">
+  	<time datetime="2016-04-06T03:33:39.000Z" itemprop="datePublished">2016-04-06</time>
 </a>
     </div>
   
@@ -222,7 +216,7 @@ Standard模式（默认）这个模式是系统默认的，不设置的模式属
         
   
     <h1 class="article-title" itemprop="name">
-      android中activity的启动模式
+      android中代码设置长度转换（dp,px,sp）
     </h1>
   
 
@@ -242,18 +236,9 @@ Standard模式（默认）这个模式是系统默认的，不设置的模式属
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>当应用运行起来后就会开启一条线程，线程中会有一个堆栈。每当有新的Activity创建的时候，就把它放入堆栈里面。而设置Activity的启动模式会让系统知道该怎么样利用堆栈创建，在AndroidManifest.xml文件中通过配置android:launchMode=””来设置</p>
-<hr>
-<ol>
-<li><p><strong>Standard模式（默认）</strong><br>这个模式是系统默认的，不设置的模式属性用的就是这个模式。它就是直接创建一个新的Activity.</p>
-</li>
-<li><p><strong>SingleTop模式</strong><br>这种模式会考虑当前要激活的Activity实例在任务栈中是否正处于栈顶，如果处于栈顶则无需重新创建新的实例，会重用已存在的实例，否则会在任务栈中创建新的实例。</p>
-</li>
-<li><p><strong>SingleTask模式</strong><br>如果任务栈中存在该模式的Activity实例，则把栈中该实例以上的Activity实例全部移除，调用该实例的newInstance()方法重用该Activity，使该实例处於栈顶位置，否则就重新创建一个新的Activity实例。</p>
-</li>
-<li><p><strong>SingleInstance模式</strong>（我是没用过）<br>当该模式Activity实例在任务栈中创建后，只要该实例还在任务栈中，即只要激活的是该类型的Activity，都会通过调用实例的newInstance()方法重用该Activity，此时使用的都是同一个Activity实例，它都会处于任务栈的栈顶。此模式一般用于加载较慢的，比较耗性能且不需要每次都重新创建的Activity。</p>
-</li>
-</ol>
+        <p>在日常开发中，对有些控件需要在代码里改变尺寸，但是一般我们用的单位是dp。除了一些大公司会给出不同分辨率的图单位是px外，一般的还是用dp.<br>在不同分辨率的屏幕，dp和px的转换比例不一样，特别是什么魅族呀（渣渣）。而我们在代码里面设置长度的单位是px，所以我们需要一些转换方法。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$    public static int dip2px(Context context, <span class="built_in">float</span> dipValue) &#123;</span><br><span class="line">$        <span class="built_in">float</span> scale = context.getResources().getDisplayMetrics().density;</span><br><span class="line">$        <span class="built_in">return</span> (int)(dipValue * scale + 0.5F);</span><br><span class="line">$    &#125;</span><br><span class="line">$</span><br><span class="line">$    public static int px2dip(Context context, <span class="built_in">float</span> pxValue) &#123;</span><br><span class="line">$        <span class="built_in">float</span> scale = context.getResources().getDisplayMetrics().density;</span><br><span class="line">$        <span class="built_in">return</span> (int)(pxValue / scale + 0.5F);</span><br><span class="line">$    &#125;</span><br><span class="line">$</span><br><span class="line">$    public static int px2sp(Context context, <span class="built_in">float</span> pxValue) &#123;</span><br><span class="line">$        <span class="built_in">float</span> fontScale = context.getResources().getDisplayMetrics().scaledDensity;</span><br><span class="line">$        <span class="built_in">return</span> (int)(pxValue / fontScale + 0.5F);</span><br><span class="line">$    &#125;</span><br><span class="line">$</span><br><span class="line">$    public static int sp2px(Context context, <span class="built_in">float</span> spValue) &#123;</span><br><span class="line">$        <span class="built_in">float</span> fontScale = context.getResources().getDisplayMetrics().scaledDensity;</span><br><span class="line">$        <span class="built_in">return</span> (int)(spValue * fontScale + 0.5F);</span><br><span class="line">$    &#125;</span><br></pre></td></tr></table></figure>
+<p>这里context就传入上下文，比如activity，getactivity()什么的。具体使用看情况。</p>
 
       
     </div>
@@ -263,18 +248,9 @@ Standard模式（默认）这个模式是系统默认的，不设置的模式属
     
 <nav id="article-nav">
   
-    <a href="/2016/04/06/android中代码设置长度转换（dp-px-sp）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          android中代码设置长度转换（dp,px,sp）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/05/测试mathjax/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">测试mathjax</div>
+    <a href="/2016/04/06/android中activity的启动模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">android中activity的启动模式</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -309,7 +285,7 @@ Standard模式（默认）这个模式是系统默认的，不设置的模式属
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="android中activity的启动模式" data-title="android中activity的启动模式" data-url="http://yoursite.com/2016/04/06/android中activity的启动模式/"></div>
+	<div class="ds-thread" data-thread-key="android中代码设置长度转换（dp-px-sp）" data-title="android中代码设置长度转换（dp,px,sp）" data-url="http://yoursite.com/2016/04/06/android中代码设置长度转换（dp-px-sp）/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
