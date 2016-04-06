@@ -725,7 +725,11 @@ form input.st-search-input_my {
   border: 1px solid #006b98;
 }
 #header .header-nav .social a.csdn {
-  background: url("/img/csdn.png");
+  background: url("/img/csdn.png") center no-repeat #cb0000;
+  border: 1px solid #cb0000;
+}
+#header .header-nav .social a.csdn:hover {
+  border: 1px solid #cb0000;
 }
 #header .switch-part {
   width: 100%;
